@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             btn3.id -> msg = "button 3 is clicked"
             btn4.id -> msg = "button 4 is clicked"
             btn5.id -> msg = "button 5 is clicked"
+
         }
         Toast.makeText(this,msg, Toast.LENGTH_SHORT).show()
     }
