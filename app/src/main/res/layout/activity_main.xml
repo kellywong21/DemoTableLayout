@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:onClick="btnOnClick"
+            android:text="Column 1"/>
+        <Button
+            android:id="@+id/btn2"
+            android:onClick="btnOnClick"
+            android:text="Column 2"/>
+        <Button
+            android:id="@+id/btn3"
+            android:onClick="btnOnClick"
+            android:text="Column 3"/>
+        <Button
+            android:id="@+id/btn4"
+            android:onClick="btnOnClick"
+            android:text="Column 4"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_span="2"
+            android:hint="Column 1 and 2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_column="2"
+            android:onClick="btnOnClick"
+            android:text="Column 3"/>
+
+    </TableRow>
+
+</TableLayout>
